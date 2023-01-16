@@ -4,6 +4,7 @@ namespace OOP_Web.Ornekler
 {
     public class Class1
     {
-        Product product = new Product();
+        Product p = new Product();
+
     }
 }
