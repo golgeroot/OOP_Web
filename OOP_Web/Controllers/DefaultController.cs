@@ -11,6 +11,21 @@ namespace OOP_Web.Controllers
         //    c.Topla();
         //}
     
+        int Topla()
+        {
+            int s1 = 2;
+            int s2 = 3;
+            int sonuc = s1 + s2;
+            return sonuc;
+        }
+
+        int Cevre()
+        {
+            int kisaKenar = 10;
+            int uzunKenar = 20;
+            int cevre=2*(kisaKenar+uzunKenar);
+            return cevre;
+        }
 
         void Mesajlar()
         {
@@ -21,6 +36,13 @@ namespace OOP_Web.Controllers
         public IActionResult Index()
         {
             Mesajlar();
+            return View();
+        }
+        public IActionResult Urunler()
+        {
+            Mesajlar();
+            ViewBag.t=Topla();
+            ViewBag.c = Cevre();
             return View();
         }
     }
