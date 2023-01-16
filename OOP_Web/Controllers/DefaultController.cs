@@ -26,7 +26,12 @@ namespace OOP_Web.Controllers
             int cevre=2*(kisaKenar+uzunKenar);
             return cevre;
         }
-
+        string Cumle()
+        {
+            string c = "Küçük hanımlar küçük beyler sizler hepinizi geleceğin birer" +
+                "gülü parlayan ışık saçan yıldızı olacaksınız";
+            return c;
+        }
         void Mesajlar()
         {
             ViewBag.m1 = "Merhaba bu bir core projesi";
@@ -43,6 +48,11 @@ namespace OOP_Web.Controllers
             Mesajlar();
             ViewBag.t=Topla();
             ViewBag.c = Cevre();
+            return View();
+        }
+        public IActionResult Musteriler()
+        {
+            ViewBag.d = Cumle();
             return View();
         }
     }
