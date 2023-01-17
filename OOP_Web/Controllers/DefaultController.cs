@@ -99,20 +99,32 @@ namespace OOP_Web.Controllers
             sehirler.ID = 1;
             sehirler.Nufus = 4753000;
             sehirler.Ulke = "Türkiye";
+            sehirler.Renk1 = "Mavi";
+            sehirler.Renk2 = "Sarı";
+
             ViewBag.v1 = sehirler.ID;
             ViewBag.v2 = sehirler.Ulke;
             ViewBag.v3 = sehirler.Ad;
             ViewBag.v4 = sehirler.Nufus;
+            ViewBag.v5 =sehirler.Renk1;
+            ViewBag.v6 =sehirler.Renk2;
+            ViewBag.v7 =sehirler.Renk3;
 
 
             sehirler.ID = 2;
             sehirler.Ulke = "Makedonya";
             sehirler.Ad = "Üsküp";
             sehirler.Nufus = 9003223;
+            sehirler.Renk1 = "Kırmızı";
+            sehirler.Renk2 = "Mavi";
+            sehirler.Renk3 = "Ela";
             ViewBag.z1 = sehirler.ID;
             ViewBag.z2 = sehirler.Ulke;
             ViewBag.z3 = sehirler.Ad;
             ViewBag.z4 = sehirler.Nufus;
+            ViewBag.z5 = sehirler.Renk1;
+            ViewBag.z6 = sehirler.Renk2;
+            ViewBag.z7 = sehirler.Renk3;
             return View();
         }
     }

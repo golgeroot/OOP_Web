@@ -1,6 +1,6 @@
 ﻿namespace OOP_Web.Ornekler
 {
-    public class Sehirler
+    public class Sehirler : Bayrak
     {
         public int ID { get; set; }
         public string Ad { get; set; }
