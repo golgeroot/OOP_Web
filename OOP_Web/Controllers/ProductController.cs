@@ -26,5 +26,12 @@ namespace OOP_Web.Controllers
             context.SaveChanges();
             return RedirectToAction("Index");
         }
+        public IActionResult DeleteProduct(int id)
+        {
+            var vales = context.Products.Where(x => x.Id == id).FirstOrDefault();
+            context.Remove(vales);
+            context.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
